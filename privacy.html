@@ -2,37 +2,85 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>개인정보 처리방침</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 - gangdonglab</title>
   <style>
     body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; }
+    th { background: #f4f4f4; }
   </style>
 </head>
 <body>
   <h1>개인정보 처리방침</h1>
 
-  <p>본 앱은 사용자의 개인정보를 직접 수집하거나 저장하지 않습니다.</p>
+  <p>
+    본 개인정보 처리방침은 개발자 <strong>gangdonglab</strong>(이하 "개발자")이 Google Play 및 App Store에
+    배포하는 아래 앱(이하 "앱")에 공통으로 적용됩니다.
+  </p>
 
-  <h2>1. 수집하지 않는 정보</h2>
-  <p>앱은 이름, 전화번호, 이메일 주소, 아이디, 비밀번호 등 사용자의 직접적인 식별 정보를 수집하지 않습니다.</p>
-
-  <h2>2. 수집되는 비개인 정보</h2>
-  <p>앱은 사용자 경험 개선 및 오류 추적을 위해 Google Firebase 서비스를 이용하여 다음과 같은 정보를 수집할 수 있습니다:</p>
+  <h2>1. 개발자 정보</h2>
   <ul>
-    <li>기기 정보 (기종, 운영체제 버전 등)</li>
-    <li>앱 사용 통계 (화면 방문, 기능 사용 빈도 등)</li>
-    <li>오류 및 충돌 정보 (Crashlytics)</li>
-    <li>푸시 알림 토큰 (Cloud Messaging)</li>
+    <li>개발자명: gangdonglab</li>
+    <li>연락처(이메일): gangdong.lab@gmail.com</li>
   </ul>
 
-  <p>이 정보는 익명으로 수집되며 개인을 식별할 수 없습니다.</p>
+  <h2>2. 적용 대상 앱</h2>
+  <table>
+    <tr><th>앱 이름</th><th>패키지명 (Android)</th></tr>
+    <tr><td>통영버스</td><td>com.gangdong.tongyeongbus</td></tr>
+    <tr><td>군산버스</td><td>com.gangdong.gunsanbus</td></tr>
+    <tr><td>천안버스</td><td>com.gangdong.cheonanbus</td></tr>
+    <tr><td>부산버스</td><td>com.gangdong.busanbus</td></tr>
+    <tr><td>부천버스</td><td>com.gangdong.bucheonbus</td></tr>
+    <tr><td>경기버스</td><td>com.gangdong.gyeonggibus</td></tr>
+    <tr><td>서울버스</td><td>com.gangdong.seoulbus_all</td></tr>
+    <tr><td>서울마을버스</td><td>com.gangdong.seoulbus_village</td></tr>
+    <tr><td>인천버스</td><td>com.yama.IncheonBus</td></tr>
+    <tr><td>울산버스</td><td>com.gangdonglab.ulsanbus</td></tr>
+    <tr><td>실시간지하철</td><td>com.gangdonglab.subway</td></tr>
+    <tr><td>인천날씨미세</td><td>com.gangdonglab.incheonmise</td></tr>
+    <tr><td>서울날씨미세</td><td>com.gangdonglab.seoulmise</td></tr>
+  </table>
 
-  <h2>3. 제3자 서비스</h2>
-  <p>앱은 Google Firebase(Analytics, Crashlytics 등)를 사용하며, Google의 개인정보 보호정책은 <a href="https://policies.google.com/privacy" target="_blank">여기</a>에서 확인하실 수 있습니다.</p>
+  <h2>3. 수집하지 않는 정보</h2>
+  <p>
+    앱은 이름, 전화번호, 이메일 주소, 아이디, 비밀번호 등 사용자를 직접 식별할 수 있는 정보를 수집하지 않으며,
+    회원가입 기능이 없습니다.
+  </p>
 
-  <h2>4. 변경 사항 안내</h2>
+  <h2>4. 자동으로 수집될 수 있는 정보</h2>
+  <p>앱은 서비스 개선, 오류 분석, 광고 제공을 위해 아래 제3자 서비스를 통해 다음 정보가 수집될 수 있습니다.</p>
+  <ul>
+    <li>기기 정보 (기종, 운영체제 버전 등)</li>
+    <li>앱 사용 통계 (화면 방문, 기능 사용 빈도 등) — Firebase Analytics</li>
+    <li>오류 및 충돌 정보 — Firebase Crashlytics</li>
+    <li>푸시 알림 토큰 — Firebase Cloud Messaging</li>
+    <li>광고 식별자(Android 광고 ID / iOS IDFA) — Google AdMob</li>
+  </ul>
+
+  <h2>5. 위치 정보</h2>
+  <p>
+    일부 앱은 지도 화면에서 현재 위치를 표시하기 위해 사용자의 허용 하에 기기의 위치 정보를 사용합니다.
+    위치 정보는 기기 안에서만 사용되며 개발자의 서버로 전송되거나 저장되지 않습니다.
+  </p>
+
+  <h2>6. 제3자 서비스</h2>
+  <ul>
+    <li>Google Firebase (Analytics, Crashlytics, Cloud Messaging, Remote Config)</li>
+    <li>Google AdMob</li>
+  </ul>
+  <p>
+    각 서비스의 개인정보 처리는
+    <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.
+  </p>
+
+  <h2>7. 문의</h2>
+  <p>개인정보 관련 문의는 gangdong.lab@gmail.com 으로 연락해 주십시오.</p>
+
+  <h2>8. 변경 사항 안내</h2>
   <p>본 방침은 변경될 수 있으며, 변경 시 본 페이지에 즉시 반영됩니다.</p>
 
-  <p>최종 수정일: 2025년 7월 1일</p>
+  <p>시행일: 2026년 11월 7일</p>
 </body>
 </html>
